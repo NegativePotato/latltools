@@ -5,7 +5,7 @@ This can be done from [CRAN](https://cran.r-project.org/]). Then enter the follo
 `library(devtools)`
 
 ## Install latltools from github
-Enter the following commands in the R console :
+Enter the following commands in the R console : \
 `install_github("NegativePotato/latltools")`
 
 
