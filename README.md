@@ -8,4 +8,5 @@ This can be done from [CRAN](https://cran.r-project.org/]). Then enter the follo
 Enter the following commands in the R console : \
 `install_github("NegativePotato/latltools")`
 
-
+Todo : 
+Include a test dataset for a working example
