@@ -12,7 +12,9 @@ IDs for each participant and the columns from the VGQ with the names
 following the pattern from the Qualtrics questionnaire from the Mini-copter
 study (from LATL), see here : https://uwmadison.co1.qualtrics.com/survey-builder/SV_7UGlBut4jMHOb4O/edit}
 
-\item{raw_values_qualtrics}{Logical variable indicating whether the scores need to be adjusted by adding one to values as the scores on Qualtrics start at 0 instead of 1.}
+\item{raw_values_qualtrics}{(Default \code{TRUE})Logical variable indicating whether the scores need
+to be adjusted by adding one to values as the scores on Qualtrics start at 0 instead of 1
+(use \code{TRUE} if you have not corrected the values).}
 }
 \value{
 A data frame with the player cateogry in the column "player_category" and the item columns renamed according to the mapping above.
@@ -33,6 +35,6 @@ The output data frame has columned named following the template : <vg category>_
 }
 \examples{
 raw.df <- read_excel('video_game_scores.xlsx')
-scored.df <- get_vgq_scores_latl(raw.df)
+scored.df <- get_vgq_scores_latl(raw.df, raw_values_qualtrics = T)
 
 }
