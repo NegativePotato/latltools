@@ -59,7 +59,7 @@ get_vgq_scores_latl <- function(raw.df, raw_values_qualtrics = T) {
 
 
   vgp_categories.df <- raw.df %>%
-    select(Participant_ID, contains("past.year")) %>%
+    select(Participant_ID, contains("past.year"))
 
   if(raw_values_qualtrics) {
     vgp_categories.df <- vgp_categories.df %>%
