@@ -12,7 +12,7 @@
 #'
 #'  Requires : pracma, dplyr
 #'
-#' @param raw.df Data frame with at least one column named "Participant_ID" with the unique
+#' @param raw.df Data frame with at least one column named "participant_id" with the unique
 #'  IDs for each participant and the columns from the VGQ with the names
 #'  following the pattern from the Qualtrics questionnaire from the Mini-copter
 #'  study (from LATL), see here : https://uwmadison.co1.qualtrics.com/survey-builder/SV_7UGlBut4jMHOb4O/edit
@@ -30,7 +30,7 @@
 
 get_vgq_scores_latl <- function(raw.df, raw_values_qualtrics = T) {
   # Input :
-  # Data frame with at least one column named "Participant_ID" with the unique
+  # Data frame with at least one column named "participant_id" with the unique
   # IDs for each participant and the columns from the VGQ with the names
   # following the pattern from the Qualtrics questionnaire from the Mini-copter
   # study (from LATL), see here :
@@ -40,10 +40,10 @@ get_vgq_scores_latl <- function(raw.df, raw_values_qualtrics = T) {
   # Example use :
   # scored.df <- get_vgq_scores(raw.df = raw.df)
 
-  if(!"Participant_ID" %in% names(raw.df)) {
-    warning('No Participant_ID column found. Default ID column added to the dataframe.')
+  if(!"participant_id" %in% names(raw.df)) {
+    warning('No participant_id column found. Default ID column added to the dataframe.')
     raw.df <- raw.df %>%
-      mutate(Participant_ID =
+      mutate(participant_id =
                sprintf(sprintf('ID_%%0%ii', floor(log10(n())) + 1),row_number()))
   }
   raw.df <- make_vgq_col_names_better_latl(raw.df)
@@ -59,7 +59,7 @@ get_vgq_scores_latl <- function(raw.df, raw_values_qualtrics = T) {
 
 
   vgp_categories.df <- raw.df %>%
-    select(Participant_ID, contains("past.year"))
+    select(participant_id, contains("past.year"))
 
   if(raw_values_qualtrics) {
     vgp_categories.df <- vgp_categories.df %>%
