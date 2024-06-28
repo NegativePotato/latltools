@@ -23,8 +23,7 @@
 #' @return A data frame with the player cateogry in the column "player_category" and the item columns renamed according to the mapping above.
 #'
 #' @examples
-#' raw.df <- read_excel('video_game_scores.xlsx')
-#' scored.df <- get_vgq_scores_latl(raw.df, raw_values_qualtrics = T)
+#' scored.df <- get_vgq_scores_latl(example_data.df, raw_values_qualtrics = T)
 #'
 #' @export
 

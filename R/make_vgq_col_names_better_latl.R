@@ -15,7 +15,7 @@
 #' @return A data frame with the columns renamed
 #'
 #' @examples
-#' scored.df <- make_vgq_col_names_better_latl(raw.df)
+#' scored.df <- make_vgq_col_names_better_latl(example_data.df)
 #'
 #' @keywords internal
 #' @export
