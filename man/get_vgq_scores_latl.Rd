@@ -4,13 +4,15 @@
 \alias{get_vgq_scores_latl}
 \title{Returns Video Game Player Category}
 \usage{
-get_vgq_scores_latl(raw.df)
+get_vgq_scores_latl(raw.df, raw_values_qualtrics = T)
 }
 \arguments{
 \item{raw.df}{Data frame with at least one column named "Participant_ID" with the unique
 IDs for each participant and the columns from the VGQ with the names
 following the pattern from the Qualtrics questionnaire from the Mini-copter
 study (from LATL), see here : https://uwmadison.co1.qualtrics.com/survey-builder/SV_7UGlBut4jMHOb4O/edit}
+
+\item{raw_values_qualtrics}{Logical variable indicating whether the scores need to be adjusted by adding one to values as the scores on Qualtrics start at 0 instead of 1.}
 }
 \value{
 A data frame with the player cateogry in the column "player_category" and the item columns renamed according to the mapping above.
