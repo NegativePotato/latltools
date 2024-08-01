@@ -17,7 +17,7 @@
 #'
 #' @examples
 #' # saves my_plot in 3 files my_awesome_plot.png, and my_awesome_plot.rds,
-#' my_awesome_plot.eps in the folder path/to/figure/directory.
+#' # my_awesome_plot.eps in the folder path/to/figure/directory.
 #' my_plot <- ggplot() + ...
 #' save_plot(plot = my_plot,
 #           file_name_full_no_ext = file.path(“path/to/figure/directory”, “my_awesome_plot”),
