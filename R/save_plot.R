@@ -3,7 +3,6 @@
 #' Given a plot object output from ggplot function, this function saves the plot
 #' as a png (pixel map), eps (vectorized format), and rds (R object) files.
 #'
-#'  Requires : pracma, dplyr
 #'
 #' @param plot plot object from ggplot
 #' @param file_name_full_no_ext name of the file including the path to the folder
