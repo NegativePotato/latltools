@@ -25,6 +25,7 @@
 #' @examples
 #' scored.df <- get_vgq_scores_latl(example_data.df, raw_values_qualtrics = T)
 #'
+#' @import dplyr
 #' @export
 
 get_vgq_scores_latl <- function(raw.df, raw_values_qualtrics = T) {

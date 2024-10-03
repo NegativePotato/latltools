@@ -31,5 +31,4 @@ as a png (pixel map), eps (vectorized format), and rds (R object) files.
 # my_awesome_plot.eps in the folder path/to/figure/directory.
 my_plot <- ggplot() + ...
 save_plot(plot = my_plot,
-
 }

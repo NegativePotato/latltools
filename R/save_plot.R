@@ -1,5 +1,3 @@
-#' @importFrom ggplot2 ggsave
-#'
 #' Saves an ggplot object as png, eps, and rds.
 #'
 #' Given a plot object output from ggplot function, this function saves the plot
@@ -23,7 +21,7 @@
 #' save_plot(plot = my_plot,
 #           file_name_full_no_ext = file.path(“path/to/figure/directory”, “my_awesome_plot”),
 #           width = 7, height = 7, units = 'in')
-#'
+#
 #' @export
 
 

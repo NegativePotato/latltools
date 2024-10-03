@@ -18,6 +18,7 @@
 #' scored.df <- make_vgq_col_names_better_latl(example_data.df)
 #'
 #' @keywords internal
+#' @import dplyr
 #' @export
 
 make_vgq_col_names_better_latl <- function(raw.df) {
