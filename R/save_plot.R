@@ -1,4 +1,5 @@
 #' @importFrom ggplot2 ggsave
+#'
 #' Saves an ggplot object as png, eps, and rds.
 #'
 #' Given a plot object output from ggplot function, this function saves the plot

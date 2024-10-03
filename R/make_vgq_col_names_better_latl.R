@@ -1,5 +1,6 @@
 #' @import dplyr
 #' @import pracma
+#'
 #' Uniformizes the names of the columns in a dataset from the VGQ
 #'
 #' Converts the column names from the LATL VGQ Qualtrics questionnaire to a
