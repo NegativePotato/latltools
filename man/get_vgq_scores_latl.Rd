@@ -34,7 +34,6 @@ The output data frame has columned named following the template : <vg category>_
  Requires : pracma, dplyr
 }
 \examples{
-raw.df <- read_excel('video_game_scores.xlsx')
-scored.df <- get_vgq_scores_latl(raw.df, raw_values_qualtrics = T)
+scored.df <- get_vgq_scores_latl(example_data.df, raw_values_qualtrics = T)
 
 }

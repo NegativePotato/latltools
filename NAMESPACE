@@ -2,3 +2,4 @@
 
 export(get_vgq_scores_latl)
 export(make_vgq_col_names_better_latl)
+export(save_plot)

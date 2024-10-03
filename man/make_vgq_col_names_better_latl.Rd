@@ -25,7 +25,7 @@ uniformized model that follows this template : <vg category>_<time period>_<meas
 <measure> can take the values "hours", "small.screen", or "touch.screen"
 }
 \examples{
-scored.df <- make_vgq_col_names_better_latl(raw.df)
+scored.df <- make_vgq_col_names_better_latl(example_data.df)
 
 }
 \keyword{internal}
