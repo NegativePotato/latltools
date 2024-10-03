@@ -1,6 +1,3 @@
-#' @import dplyr
-#' @import pracma
-#'
 #' Returns Video Game Player Category
 #'
 #' Given a data frame where each row is a participant and with the answers to the
